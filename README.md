@@ -35,7 +35,7 @@ The AKS Construction tool also provides the workflow you'll need to create in yo
 
 Create the file in your repo
 
-![image](https://user-images.githubusercontent.com/17914476/217798732-9d63a540-217d-431c-b4ff-6b3efe286104.png)
+![image](https://user-images.githubusercontent.com/17914476/217866842-31c8cbbd-d3b3-4646-a86e-64ac9cfeacf2.png)
 
 Now run the GitHub action workflow from the `Actions` tab.
 
