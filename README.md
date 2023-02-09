@@ -33,3 +33,19 @@ The AKS Construction tool also provides the workflow you'll need to create in yo
 
 ![image](https://user-images.githubusercontent.com/17914476/217798470-9074b0f3-4298-45d2-aa29-0a3b86e5449f.png)
 
+Create the file in your repo
+
+![image](https://user-images.githubusercontent.com/17914476/217798732-9d63a540-217d-431c-b4ff-6b3efe286104.png)
+
+Now run the GitHub action workflow from the `Actions` tab.
+
+![image](https://user-images.githubusercontent.com/17914476/217798926-9ff34b97-ff0d-4da3-b277-86488f897b35.png)
+
+### Verify the infrastructure creation
+
+You should find that the following Azure infrastructure is created.
+
+![image](https://user-images.githubusercontent.com/17914476/217800848-433d9024-2209-4efd-8e83-1b84d4f9dc2a.png)
+
+
+
