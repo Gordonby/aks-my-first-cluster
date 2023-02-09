@@ -43,9 +43,17 @@ Now run the GitHub action workflow from the `Actions` tab.
 
 ### Verify the infrastructure creation
 
-You should find that the following Azure infrastructure is created.
+You should find that the following Azure infrastructure is created in ~9 minutes.
 
 ![image](https://user-images.githubusercontent.com/17914476/217800848-433d9024-2209-4efd-8e83-1b84d4f9dc2a.png)
+
+## Step 3 - Deploying the Azure Vote App
+
+In the first instance, lets leverage a public container image to run a 2 tier web app in the cluster.
+
+### Creating the workflow
+
+
 
 
 
