@@ -13,7 +13,7 @@ Using [AKS Construction](https://azure.github.io/AKS-Construction/?deploy.cluste
 The AKS Construction Accelerator provides a GitHub reusable workflow that we can reference from our own GitHub workflow. For ease, it'll provide all the scripts you'll need to create the Azure AD Identity, and coresponding GitHub secrets to allow GitHub to create Azure resources. To do this, we'll just need to provide the GitHub repository that you'll be using in order to put the correct values in the script.
 ![image](https://user-images.githubusercontent.com/17914476/217792218-ae7c9e53-e358-4c29-87a4-c746cabe3eb2.png)
 
-Use the [Azure Cloud Shell](shell.azure.com to run the script, as it contains the GitHub CLI and the Azure CLI both required by the script.
+Use the [Azure Cloud Shell](shell.azure.com) to run the script, as it contains the GitHub CLI and the Azure CLI both required by the script.
 
 ### Identity and Secrets
 
