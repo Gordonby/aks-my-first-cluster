@@ -31,7 +31,7 @@ Use the [Azure Cloud Shell](shell.azure.com) to run the script, as it contains t
 
 The AKS Construction tool also provides the workflow you'll need to create in your own repository in order to create the Azure Infrastructure.
 
-![image](https://user-images.githubusercontent.com/17914476/217798470-9074b0f3-4298-45d2-aa29-0a3b86e5449f.png)
+![image](https://user-images.githubusercontent.com/17914476/217866462-5a32e51b-a01e-4cb7-ab58-53d9abc1bfd9.png)
 
 Create the file in your repo
 
