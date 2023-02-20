@@ -2,20 +2,28 @@ name: Deploy AKS-Construction
 
 on:
   workflow_dispatch:
-
+    inputs:
+      RG:
+        description: 'The Resource Group where your resources are deployed'
+        required: true
+        type: string
+      NAME:
+        description: 'The Name to be used in resource naming'
+        required: true
+        type: string
+        
 permissions:
       id-token: write
       contents: read
-
 
 jobs:
   reusable_workflow_job:
     uses: Azure/AKS-Construction/.github/workflows/AKSC_Deploy.yml@0.9.9
     with:
       templateVersion: 0.9.9
-      rg: aks
-      resourceName: firstcluster
-      templateParams: resourceName=firstcluster agentCount=1 JustUseSystemPool=true custom_vnet=true CreateNetworkSecurityGroups=true enable_aad=true enableAzureRBAC=true adminPrincipalId=_USER_OBJECT_ID_ registries_sku=Basic acrPushRolePrincipalId=_USER_OBJECT_ID_ omsagent=true retentionInDays=30
+      rg: ${{ inputs.RG }}
+      resourceName: ${{ inputs.NAME }}
+      templateParams: resourceName=${{ inputs.NAME }} agentCount=1 JustUseSystemPool=true custom_vnet=true CreateNetworkSecurityGroups=true enable_aad=true enableAzureRBAC=true adminPrincipalId=_USER_OBJECT_ID_ registries_sku=Basic acrPushRolePrincipalId=_USER_OBJECT_ID_ omsagent=true retentionInDays=30
     secrets:
       AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
       AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
