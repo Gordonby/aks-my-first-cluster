@@ -5,12 +5,14 @@ on:
     inputs:
       RG:
         description: 'The Resource Group where your resources are deployed'
-        required: true
+        required: false
         type: string
+        default: rg1
       NAME:
         description: 'The Name to be used in resource naming'
-        required: true
+        required: false
         type: string
+        default: az-k8s-fk9l
         
 permissions:
       id-token: write
